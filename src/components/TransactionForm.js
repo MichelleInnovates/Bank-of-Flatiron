@@ -1,21 +1,21 @@
 import React from "react";
 
-function AddTransactionForm() {
+function TransactionForm() {
   return (
-    <div className="ui segment">
-      <form className="ui form">
-        <div className="inline fields">
-          <input type="date" name="date" />
-          <input type="text" name="description" placeholder="Description" />
-          <input type="text" name="category" placeholder="Category" />
-          <input type="number" name="amount" placeholder="Amount" step="0.01" />
+    <div className="transaction-form-container">
+      <form className="ui form transaction-form">
+        <div className="transaction-form-fields">
+          <input type="date" name="date" className="form-input" />
+          <input type="text" name="description" placeholder="Description" className="form-input" />
+          <input type="text" name="category" placeholder="Category" className="form-input" />
+          <input type="number" name="amount" placeholder="Amount" step="0.01" className="form-input" />
+          <button className="ui button add-transaction-btn" type="submit">
+            Add Transaction
+          </button>
         </div>
-        <button className="ui button" type="submit">
-          Add Transaction
-        </button>
       </form>
     </div>
   );
 }
 
-export default AddTransactionForm;
+export default TransactionForm;

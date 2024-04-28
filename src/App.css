@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: 14px;
 }
 
 .App-logo {
@@ -14,14 +15,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #483d8b;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1.2rem;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
 }
 
 .App-link {
@@ -35,4 +39,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem; /* Set the height of the container */
+  background-color: #f1f1f1; /* Add a background color */
+  padding: 0 2rem; /* Add some horizontal padding */
+}
+
+.ui.fullwidth.fluid.icon.input {
+  width: 100%;
+  max-width: 800px; /* Set a maximum width for the search container */
+}
+
+.ui.fullwidth.fluid.icon.input input {
+  width: 100%;
+  padding: 0.75rem 1.5rem; /* Add some padding to the input field */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ui.fullwidth.fluid.icon.input i.circular.search.link.icon {
+  font-size: 1.2rem;
+  color: #333;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.transaction-form-container {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.transaction-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transaction-form-fields {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: -0.5rem;
+}
+
+.transaction-form-fields .form-input {
+  flex: 1;
+  margin: 0.5rem;
+}
+
+.add-transaction-btn {
+  margin-left: 1rem;
 }

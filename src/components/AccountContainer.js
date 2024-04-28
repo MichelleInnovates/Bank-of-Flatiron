@@ -1,14 +1,19 @@
 import React from "react";
 import TransactionsList from "./TransactionsList";
 import Search from "./Search";
-import AddTransactionForm from "./AddTransactionForm";
+import TransactionForm from "./TransactionForm";
 
-function AccountContainer() {
+function AccountContainer({
+  transactions,
+  searchTerm,
+  onSearch,
+  onAddTransaction,
+}) {
   return (
     <div>
-      <Search />
-      <AddTransactionForm />
-      <TransactionsList />
+      <Search onSearch={onSearch} />
+      <TransactionForm onAddTransaction={onAddTransaction} />
+      <TransactionsList transactions={transactions} searchTerm={searchTerm} />
     </div>
   );
 }
